@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="COHAP Outreach Corporation is a 501(c)(3) nonprofit breaking the cycle of homelessness for veterans, domestic violence survivors, formerly incarcerated individuals, and aged-out foster care youth.">
-<title>COHAP Outreach Corporation | Breaking the Cycle of Homelessness</title>
+<meta name="description" content="COHAP Outreach Corporation — 501(c)(3) nonprofit breaking the cycle of homelessness for veterans, domestic violence survivors, formerly incarcerated individuals, and aged-out foster care youth.">
+<title>COHAP Outreach Corporation — Breaking the Cycle of Homelessness</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
  --brown:#7D5814;       /* footer base — darker brand gold-brown */
  --brown-deep:#4D3408;  /* footer bottom strip */
  --white:#fff;
- --light-gray:#F7F6F3;   /* warm neutral off-white — no blue cast (client read the old cool gray as purple) */
+ --light-gray:#F4F4F6;
  --soft-gray:#E9E8E8;
  --charcoal:#3b3b3b;
  --mid-gray:#666;
@@ -182,7 +182,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 @media(max-width:767px){.mission{padding:48px 0}.mission__quote{font-size:18px}}
 
 /* Campaign */
-.campaign{background:#fff;padding:80px 0}
+.campaign{background:var(--light-gray);padding:80px 0}
 .campaign__grid{display:grid;grid-template-columns:55fr 45fr;gap:48px;align-items:center}
 .campaign__image{background:linear-gradient(135deg,rgba(45,61,123,.7),rgba(40,48,108,.85)),url('images/IMG_0455.jpg') center/cover no-repeat;border-radius:12px;height:400px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:40px}
 .campaign__image h3{font-family:'Montserrat',sans-serif;font-size:36px;font-weight:800;line-height:1.15;color:#fff}
@@ -210,7 +210,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 .sponsorships__header h2{font-size:32px;font-weight:800;color:var(--navy)}
 .sponsorships__header p{font-size:16px;color:var(--mid-gray);margin-top:10px;line-height:1.6}
 .sponsorships__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.sponsorship-card{background:#fff;border:1px solid #E5E3DE;border-radius:14px;padding:36px 28px 32px;text-align:center;display:flex;flex-direction:column;align-items:center;transition:all .3s ease;position:relative;border-top:4px solid var(--gold);color:var(--charcoal)}
+.sponsorship-card{background:#fff;border:1px solid #e3e3e8;border-radius:14px;padding:36px 28px 32px;text-align:center;display:flex;flex-direction:column;align-items:center;transition:all .3s ease;position:relative;border-top:4px solid var(--gold);color:var(--charcoal)}
 .sponsorship-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(45,61,123,.16);border-color:var(--gold)}
 .sponsorship-card--noicon{justify-content:space-between}
 .sponsorship-card__icon{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-light) 100%);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:18px;box-shadow:0 6px 18px rgba(199,134,43,.35)}
@@ -238,16 +238,16 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 @media(max-width:767px){.impact{padding:48px 0}.impact__grid{grid-template-columns:repeat(2,1fr);gap:24px}.impact__item::after{display:none}.impact__number{font-size:40px}.impact__prefix,.impact__suffix{font-size:30px}}
 
 /* Programs */
-.programmes{background:#fff;padding:80px 0}
+.programmes{background:var(--light-gray);padding:80px 0}
 .programmes__header{text-align:center;margin-bottom:48px}
 .programmes__header h2{font-size:32px;font-weight:800;color:var(--navy);line-height:1.25}
 .programmes__header p{font-size:16px;color:var(--charcoal);max-width:640px;margin:12px auto 0;line-height:1.6}
 .programmes__grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
 .programmes__grid--six{grid-template-columns:repeat(6,1fr);gap:18px}
 .programme-card__icon--blue{background:var(--navy) !important}
-.programme-card{background:#fff;border:1px solid #E7E4DE;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.06);overflow:hidden;min-height:340px;display:flex;flex-direction:column;transition:all .3s ease}
+.programme-card{background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.06);overflow:hidden;min-height:340px;display:flex;flex-direction:column;transition:all .3s ease}
 .programme-card:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(45,61,123,.14)}
-.programme-card__header{height:140px;background:var(--card-bg) center/cover no-repeat;background-color:#EFEDE8;display:flex;align-items:flex-end;justify-content:center;position:relative}
+.programme-card__header{height:140px;background:linear-gradient(135deg,rgba(45,61,123,.85),rgba(40,48,108,.9)),var(--card-bg) center/cover no-repeat;display:flex;align-items:flex-end;justify-content:center;position:relative}
 .programme-card__icon{position:absolute;bottom:-24px;width:52px;height:52px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.18);color:#fff}
 .programme-card__icon svg{color:#fff;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .programme-card__body{padding:36px 18px 24px;text-align:center;flex:1;display:flex;flex-direction:column}
@@ -299,10 +299,10 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 @media(max-width:767px){.testimonial{padding:48px 0}.testimonial__quote{font-size:17px}}
 
 /* Events + News */
-.events-news{background:#fff;padding:80px 0}
+.events-news{background:var(--light-gray);padding:80px 0}
 .events-news__grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
 .events-news__grid h2{font-size:30px;font-weight:800;color:var(--navy);line-height:1.25;margin-bottom:24px}
-.event-card{background:#fff;border:1px solid #E7E4DE;border-radius:8px;padding:0;display:flex;gap:0;margin-bottom:16px;transition:box-shadow .2s,transform .2s;overflow:hidden}
+.event-card{background:#fff;border-radius:8px;padding:0;display:flex;gap:0;margin-bottom:16px;transition:box-shadow .2s,transform .2s;overflow:hidden}
 .event-card:hover{box-shadow:0 6px 20px rgba(45,61,123,.12);transform:translateY(-2px)}
 .event-card__img{width:120px;min-height:100%;object-fit:cover;flex-shrink:0}
 .event-card__inner{display:flex;gap:16px;padding:20px;flex:1}
@@ -314,7 +314,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 .event-card__time{font-size:13px;color:var(--mid-gray);margin-top:2px}
 .event-card__link{font-size:13px;color:var(--navy);font-weight:700;margin-top:8px;display:inline-block;text-transform:uppercase;letter-spacing:.5px;font-family:'Montserrat',sans-serif}
 .event-card__link:hover{color:var(--gold)}
-.news-card{background:#fff;border:1px solid #E7E4DE;border-radius:8px;padding:0;margin-bottom:16px;transition:box-shadow .2s,transform .2s;overflow:hidden;display:flex;flex-direction:column}
+.news-card{background:#fff;border-radius:8px;padding:0;margin-bottom:16px;transition:box-shadow .2s,transform .2s;overflow:hidden;display:flex;flex-direction:column}
 .news-card:hover{box-shadow:0 6px 20px rgba(45,61,123,.12);transform:translateY(-2px)}
 .news-card__img{width:100%;height:160px;object-fit:cover}
 .news-card__content{padding:20px}
@@ -346,15 +346,15 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 @media(max-width:767px){.gallery{padding:48px 0}.gallery__grid{grid-template-columns:repeat(2,1fr);grid-template-rows:140px 140px 140px}.gallery__item:nth-child(1){grid-column:span 2;grid-row:span 1}.gallery__item:nth-child(n+2){grid-column:span 1}}
 
 /* Partners */
-.partners{background:#fff;padding:80px 0;overflow:hidden}
+.partners{background:var(--light-gray);padding:80px 0;overflow:hidden}
 .partners__header{text-align:center;margin-bottom:40px}
 .partners__header h2{font-size:30px;font-weight:800;color:var(--navy)}
 .partners__header p{font-size:15px;color:var(--mid-gray);margin-top:8px}
 .partners__carousel{overflow:hidden;position:relative;width:100%}
 .partners__track{display:flex;gap:24px;animation:scrollLogos 30s linear infinite;width:max-content}
 .partners__carousel:hover .partners__track{animation-play-state:paused}
-.partner-logo{min-width:180px;height:100px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:14px;transition:all .4s ease;flex-shrink:0}
-.partner-logo:hover{border-color:var(--gold)}
+.partner-logo{min-width:180px;height:100px;background:#fff;border:1px solid #e0e0e0;border-radius:8px;display:flex;align-items:center;justify-content:center;padding:14px;filter:grayscale(100%);opacity:.75;transition:all .4s ease;flex-shrink:0}
+.partner-logo:hover{filter:grayscale(0);opacity:1;border-color:var(--gold)}
 .partner-logo img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
 @media(prefers-reduced-motion:reduce){.partners__track{animation:none;flex-wrap:wrap;justify-content:center}}
 @media(max-width:767px){.partners{padding:48px 0}.partners__header h2{font-size:24px}}
@@ -379,7 +379,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 .footer{background:#fff;padding:64px 0 0;color:var(--navy)}
 .footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:48px}
 .footer__brand .logo{flex-direction:column;align-items:flex-start;gap:12px}
-.footer__brand .logo img{height:176px;width:auto}
+.footer__brand .logo img{height:120px;width:auto}
 .footer__ein{font-size:13px;color:var(--navy);margin-top:14px;font-weight:600}
 .footer__tax{font-size:13px;color:var(--navy);margin-top:8px;line-height:1.5}
 .footer__social{display:flex;gap:14px;margin-top:20px}
@@ -390,8 +390,8 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 .footer__links a:hover{color:var(--gold)}
 .footer__contact-info p{font-size:14px;color:var(--navy);line-height:1.6;font-weight:500}
 .footer__contact-info a{transition:color .2s}.footer__contact-info a:hover{color:var(--gold)}
-.footer__badges{display:flex;gap:16px;margin-top:20px;align-items:center;flex-wrap:wrap}
-.footer__badges img{height:128px;width:auto;background:#fff;padding:10px;border-radius:8px;box-shadow:0 2px 10px rgba(45,61,123,.14)}
+.footer__badges{display:flex;gap:14px;margin-top:20px;align-items:center;flex-wrap:wrap}
+.footer__badges img{height:96px;width:auto;background:rgba(255,255,255,.97);padding:10px;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
 .footer__badge--platinum{background:rgba(255,255,255,.97);color:var(--navy);font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;line-height:1.25;text-align:center;padding:14px 18px;border-radius:8px;letter-spacing:.6px;text-transform:uppercase;min-width:108px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
 .footer__badge--platinum strong{display:block;font-size:16px;color:var(--gold);margin:2px 0}
 .footer__bottom{background:#fff;margin-top:48px;padding:18px 0;border-top:1px solid rgba(45,61,123,.15)}
@@ -493,11 +493,13 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
    <div class="nav-item">
     <a href="#about" aria-haspopup="true" aria-expanded="false">About Us <svg class="chev" width="11" height="11"><use href="#i-chev"/></svg></a>
     <div class="dropdown">
-     <a href="#mission">Who We Are</a>
-     <a href="#programmes">What We Do</a>
-     <a href="#founder">About the Founder</a>
+     <a href="#mission">Mission</a>
+     <a href="#vision">Vision</a>
+     <a href="#goals">Goals</a>
+     <a href="#core-values">Five Core Values</a>
+     <a href="#story">Our Story</a>
+     <a href="#founder">About Our Founder</a>
      <a href="#team">About Our Team</a>
-     <a href="#partners">Our Partners</a>
     </div>
    </div>
    <div class="nav-item">
@@ -531,14 +533,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
    <div class="nav-item"><a href="#events">Events</a></div>
    <div class="nav-item"><a href="#gallery">Gallery</a></div>
    <div class="nav-item"><a href="#news">Media &amp; News</a></div>
-   <div class="nav-item">
-    <a href="#reports" aria-haspopup="true" aria-expanded="false">Impact Reports <svg class="chev" width="11" height="11"><use href="#i-chev"/></svg></a>
-    <div class="dropdown">
-     <a href="#report-2023">Impact Report 2023</a>
-     <a href="#report-2024">Impact Report 2024</a>
-     <a href="#report-2025">Impact Report 2025</a>
-    </div>
-   </div>
+   <div class="nav-item"><a href="#reports">Impact Reports</a></div>
    <div class="nav-item"><a href="#contact">Contact Us</a></div>
    </nav>
   </div>
@@ -553,14 +548,14 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
   <button class="mobile-nav__close" aria-label="Close menu">&times;</button>
  </div>
  <div class="mobile-nav__body">
-  <div class="mobile-nav__item"><button class="mobile-nav__toggle" aria-expanded="false">About Us <svg class="chev"><use href="#i-chev"/></svg></button><div class="mobile-nav__sub"><a href="#mission">Who We Are</a><a href="#programmes">What We Do</a><a href="#founder">About the Founder</a><a href="#team">About Our Team</a><a href="#partners">Our Partners</a></div></div>
+  <div class="mobile-nav__item"><button class="mobile-nav__toggle" aria-expanded="false">About Us <svg class="chev"><use href="#i-chev"/></svg></button><div class="mobile-nav__sub"><a href="#mission">Mission</a><a href="#vision">Vision</a><a href="#goals">Goals</a><a href="#core-values">Five Core Values</a><a href="#story">Our Story</a><a href="#founder">About Our Founder</a><a href="#team">About Our Team</a></div></div>
   <div class="mobile-nav__item"><button class="mobile-nav__toggle" aria-expanded="false">What We Do <svg class="chev"><use href="#i-chev"/></svg></button><div class="mobile-nav__sub"><a href="#housing">Housing</a><a href="#workforce">Workforce, Vocational Certification &amp; GED</a><a href="#entrepreneurship">Entrepreneurship</a><a href="#mental-wellness">Mental Wellness</a><a href="#mentoring">Mentoring (12&ndash;25)</a><a href="#veterans">Veterans</a></div></div>
   <div class="mobile-nav__item"><button class="mobile-nav__toggle" aria-expanded="false">Get Help <svg class="chev"><use href="#i-chev"/></svg></button><div class="mobile-nav__sub"><a href="#request">Request Assistance</a></div></div>
   <div class="mobile-nav__item"><button class="mobile-nav__toggle" aria-expanded="false">Get Involved <svg class="chev"><use href="#i-chev"/></svg></button><div class="mobile-nav__sub"><a href="#advisory">Join Advisory Board</a><a href="#committees">Join a Committee</a><a href="#volunteer-events">Volunteer for Events Registration</a><a href="#vendor">Community Vendor Registration</a><a href="#sponsor">Become a Sponsor</a></div></div>
   <div class="mobile-nav__item"><a href="#events">Events</a></div>
   <div class="mobile-nav__item"><a href="#gallery">Gallery</a></div>
   <div class="mobile-nav__item"><a href="#news">Media &amp; News</a></div>
-  <div class="mobile-nav__item"><button class="mobile-nav__toggle" aria-expanded="false">Impact Reports <svg class="chev"><use href="#i-chev"/></svg></button><div class="mobile-nav__sub"><a href="#report-2023">Impact Report 2023</a><a href="#report-2024">Impact Report 2024</a><a href="#report-2025">Impact Report 2025</a></div></div>
+  <div class="mobile-nav__item"><a href="#reports">Impact Reports</a></div>
   <div class="mobile-nav__item"><a href="#contact">Contact Us</a></div>
  </div>
  <div class="mobile-nav__footer"><a href="https://cohapoutreachcorporation.org/donate/" class="nav-donate" target="_blank" rel="noopener"><svg width="16" height="16"><use href="#i-heart"/></svg> Donate Now</a></div>
@@ -594,7 +589,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
   </div>
   <div class="programmes__grid programmes__grid--six">
    <div class="programme-card">
-    <div class="programme-card__header" style="--card-bg:url('images/prog-housing.jpg')">
+    <div class="programme-card__header" style="--card-bg:url('images/housing.jpg')">
      <div class="programme-card__icon programme-card__icon--blue"><svg width="22" height="22"><use href="#i-home"/></svg></div>
     </div>
     <div class="programme-card__body">
@@ -604,7 +599,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     </div>
    </div>
    <div class="programme-card">
-    <div class="programme-card__header" style="--card-bg:url('images/prog-workforce.jpg')">
+    <div class="programme-card__header" style="--card-bg:url('images/education.jpg')">
      <div class="programme-card__icon programme-card__icon--blue"><svg width="22" height="22"><use href="#i-grad"/></svg></div>
     </div>
     <div class="programme-card__body">
@@ -614,7 +609,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     </div>
    </div>
    <div class="programme-card">
-    <div class="programme-card__header" style="--card-bg:url('images/prog-entrepreneurship.jpg')">
+    <div class="programme-card__header" style="--card-bg:url('images/entrepreneurship.jpg')">
      <div class="programme-card__icon programme-card__icon--blue"><svg width="22" height="22"><use href="#i-brief"/></svg></div>
     </div>
     <div class="programme-card__body">
@@ -624,7 +619,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     </div>
    </div>
    <div class="programme-card">
-    <div class="programme-card__header" style="--card-bg:url('images/prog-wellness.jpg')">
+    <div class="programme-card__header" style="--card-bg:url('images/wellness.jpg')">
      <div class="programme-card__icon programme-card__icon--blue"><svg width="22" height="22"><use href="#i-heartpulse"/></svg></div>
     </div>
     <div class="programme-card__body">
@@ -634,7 +629,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     </div>
    </div>
    <div class="programme-card">
-    <div class="programme-card__header" style="--card-bg:url('images/prog-mentoring.jpg')">
+    <div class="programme-card__header" style="--card-bg:url('images/mentoring.jpg')">
      <div class="programme-card__icon programme-card__icon--blue"><svg width="22" height="22"><use href="#i-msg"/></svg></div>
     </div>
     <div class="programme-card__body">
@@ -644,12 +639,12 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     </div>
    </div>
    <div class="programme-card">
-    <div class="programme-card__header" style="--card-bg:url('images/prog-veterans.jpg')">
+    <div class="programme-card__header" style="--card-bg:url('images/volunteers.jpg')">
      <div class="programme-card__icon programme-card__icon--blue"><svg width="22" height="22"><use href="#i-shield"/></svg></div>
     </div>
     <div class="programme-card__body">
      <h4>Veterans</h4>
-     <p>Dedicated support for veterans transitioning back to civilian life: housing, employment, and mental-health resources.</p>
+     <p>Dedicated support for veterans transitioning back to civilian life &mdash; housing, employment, and mental-health resources.</p>
      <a href="#veterans" class="programme-card__link">Learn More &rarr;</a>
     </div>
    </div>
@@ -663,7 +658,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
   <div class="mission__inner">
    <span class="mission__eyebrow">Our Mission</span>
    <p class="mission__quote">To break the cycle of recidivism and homelessness through support, advocacy, and education by providing a structured plan and pathway for formerly incarcerated individuals, domestic violence survivors, veterans, and aged-out foster care young adults.</p>
-   <p class="mission__attr"><strong>COHAP OUTREACH CORPORATION</strong></p>
+   <p class="mission__attr">&mdash; <strong>COHAP OUTREACH CORPORATION</strong></p>
   </div>
  </div>
 </section>
@@ -675,7 +670,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
    <div class="pathway-card">
     <div class="pathway-card__icon"><svg width="32" height="32"><use href="#i-hands"/></svg></div>
     <h4>I Need Help</h4>
-    <p>We're here for veterans, survivors of domestic violence, returning citizens, and youth aging out of foster care. Request assistance confidentially.</p>
+    <p>For veterans, survivors of domestic violence, returning citizens, or youth ageing out of foster care &mdash; we're here. Request assistance confidentially.</p>
     <a href="#request" class="pathway-card__link">Request Assistance &rarr;</a>
    </div>
    <div class="pathway-card" id="donate">
@@ -708,7 +703,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
    <div class="campaign__content">
     <p class="campaign__eyebrow">Active Annual Campaign</p>
     <h2>Annual Back-to-School Bash &amp; Job Fair</h2>
-    <p>Help us provide school supplies, hygiene kits, and new shoes to 3,000 disadvantaged children across the Greater Houston area, plus on-site job-fair connections for parents and caregivers. Your $25 sponsors one child's complete back-to-school kit.</p>
+    <p>Help us provide school supplies, hygiene kits, and new shoes to 3,000 disadvantaged children across the Greater Houston area &mdash; plus on-site job-fair connections for parents and caregivers. Your $25 sponsors one child's complete back-to-school kit.</p>
     <div class="progress-wrapper">
      <div class="progress-labels"><span class="raised">$390,000 raised</span><span class="goal">$600,000 goal</span></div>
      <div class="progress-track"><div class="progress-fill" style="--progress:65%"></div></div>
@@ -738,7 +733,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
     <a href="https://cohapoutreachcorporation.org/donate/" class="btn btn--cta" target="_blank" rel="noopener">Donate to the Back-to-School Bash</a>
    </article>
    <article class="sponsorship-card sponsorship-card--noicon">
-    <h3>Sponsor With Purpose. Partner With COHAP!</h3>
+    <h3>Sponsor With Purpose &mdash; Partner With COHAP!</h3>
     <p>Sponsor and make an impact! Transform lives, uplift communities, and create unforgettable experiences.</p>
     <a href="https://cohapoutreachcorporation.org/become-a-sponsor/" class="btn btn--cta" target="_blank" rel="noopener">Become a Sponsor</a>
    </article>
@@ -791,7 +786,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
   <div class="facts__inner">
    <div class="facts__content">
     <h3>The Reality Behind Our Mission</h3>
-    <p>Homelessness, domestic violence, recidivism, and foster care aging-out aren't isolated issues. They intersect in the lives of the people we serve. The facts below tell part of the story.</p>
+    <p>Homelessness, domestic violence, recidivism, and foster care aging-out aren't isolated issues &mdash; they intersect in the lives of the people we serve. The facts below tell part of the story.</p>
     <div class="facts__stats">
      <div class="facts__stat"><span class="facts__stat-num">582K+</span><span class="facts__stat-label">Americans experience homelessness on any given night</span></div>
      <div class="facts__stat"><span class="facts__stat-num">25%</span><span class="facts__stat-label">of homeless adults are veterans or DV survivors</span></div>
@@ -812,13 +807,13 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
    <div class="story__content">
     <span class="story__eyebrow">Our Story</span>
     <h2>See the work behind the mission.</h2>
-    <p>Hear directly from the families, volunteers, and partners who make COHAP's work possible, and learn why every dollar matters to the people we serve.</p>
+    <p>Hear directly from the families, volunteers, and partners who make COHAP's work possible &mdash; and learn why every dollar matters to the people we serve.</p>
     <p>From our annual Back-to-School Bash to apartment sponsorships and crisis assistance, every program is built around one simple idea: real people, real pathways forward.</p>
     <a href="#about" class="btn btn--cta">About Our Founder &amp; Team</a>
    </div>
    <div class="story__video" role="button" tabindex="0" aria-label="Play COHAP story video">
     <div class="story__play"><div class="story__play-btn"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></div></div>
-    <div class="story__caption">Why we do this work: a message from our founder, Natasha Wilson</div>
+    <div class="story__caption">Why we do this work &mdash; a message from our founder, Natasha Wilson</div>
    </div>
   </div>
  </div>
@@ -829,7 +824,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
  <div class="container">
   <div class="testimonial__inner">
    <p class="testimonial__quote">"I'm a survivor of domestic violence. I relocated to Texas last year with my children and left everything behind to start a new life. I lived in my car for 60 days with my children after money ran out. <strong>COHAP OUTREACH CORPORATION</strong> has assisted me with everything I needed. Natasha Wilson shows so much compassion and is still assisting me to this day."</p>
-   <p class="testimonial__attr">Letitia, COHAP Program Participant</p>
+   <p class="testimonial__attr">&mdash; Letitia, COHAP Program Participant</p>
    <div class="testimonial__dots">
     <div class="testimonial__dot active"></div>
     <div class="testimonial__dot"></div>
@@ -896,7 +891,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
      <img src="images/news-turkey.jpg" alt="Operation Turkey food drive" class="news-card__img" loading="lazy">
      <div class="news-card__content">
       <span class="news-card__date">Jan 2026</span>
-      <h4>Operation Turkey: Feeding Families with Love</h4>
+      <h4>Operation Turkey &mdash; Feeding Families with Love</h4>
       <p>Volunteers and partners came together to provide Thanksgiving meals to hundreds of families in need.</p>
       <a href="#" class="news-card__link">Read More &rarr;</a>
      </div>
@@ -928,7 +923,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 </section>
 
 <!-- Partners -->
-<section class="partners reveal-section" id="partners">
+<section class="partners reveal-section">
  <div class="container">
   <div class="partners__header">
    <h2>Our Partners &amp; Sponsors</h2>
@@ -1027,7 +1022,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
      <p><a href="mailto:contactus@cohapoutreachcorporation.org">contactus@cohapoutreachcorporation.org</a></p>
     </div>
     <div class="footer__badges">
-     <img src="images/charity-navigator.png" alt="Charity Navigator Four-Star Rating">
+     <img src="images/charity-badge.png" alt="Charity Navigator Four-Star Rating">
      <img src="images/platinum-transparency.png" alt="Candid Platinum Transparency 2026">
     </div>
    </div>

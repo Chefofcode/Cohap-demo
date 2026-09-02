@@ -414,6 +414,70 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 @keyframes donorPulse{0%{box-shadow:0 0 0 0 rgba(199,134,43,.6)}70%{box-shadow:0 0 0 12px rgba(199,134,43,0)}100%{box-shadow:0 0 0 0 rgba(199,134,43,0)}}
 @keyframes scrollLogos{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* ==========================================================================
+   OPTION A - ALTERNATING BAND SYSTEM (index4 only)
+   Every section alternates against its neighbours, so no two adjacent
+   sections share a background. Navy sections go from 3 to 6.
+   hero N | programmes W | mission N | pathways W | campaign N |
+   sponsorships W | impact N | facts W | story N | testimonial W |
+   events-news N | gallery W | partners N | newsletter GOLD | footer W
+   Remove this whole block to fall back to index3's banding.
+   ========================================================================== */
+
+/* Campaign -> navy */
+.campaign{background:var(--navy)}
+.campaign__eyebrow{color:var(--gold-light)}
+.campaign__content h2{color:#fff}
+.campaign__content>p{color:rgba(255,255,255,.9)}
+.progress-labels .raised{color:#fff}
+.progress-labels .goal{color:rgba(255,255,255,.75)}
+.progress-track{background:rgba(255,255,255,.18)}
+.campaign__secondary{color:#fff}
+.campaign__secondary:hover{color:var(--gold-light)}
+.campaign .btn--outline{border-color:#fff;color:#fff}
+.campaign .btn--outline:hover{background:#fff;border-color:#fff;color:var(--navy)}
+
+/* Impact -> navy */
+.impact{background:var(--navy)}
+.impact__header h2{color:#fff}
+.impact__header p{color:rgba(255,255,255,.85)}
+.impact__icon{background:transparent;border-color:rgba(255,255,255,.55)}
+.impact__icon svg{stroke:#fff;color:#fff}
+.impact__item:not(:last-child)::after{background:rgba(255,255,255,.22)}
+.impact__number{color:var(--gold-light)}
+.impact__label{color:rgba(255,255,255,.9)}
+.impact .btn--outline{border-color:#fff;color:#fff}
+.impact .btn--outline:hover{background:#fff;border-color:#fff;color:var(--navy)}
+
+/* Testimonial -> white */
+.testimonial{background:#fff}
+.testimonial__inner::before{color:var(--gold);opacity:.3}
+.testimonial__quote{color:var(--navy)}
+.testimonial__attr{color:var(--gold-deep)}
+.testimonial__dot{background:rgba(45,61,123,.22)}
+.testimonial__dot.active{background:var(--gold)}
+
+/* Events & News -> navy (cards stay white and gain contrast) */
+.events-news{background:var(--navy)}
+.events-news__grid h2{color:#fff}
+.events-news .btn--outline{border-color:#fff;color:#fff}
+.events-news .btn--outline:hover{background:#fff;border-color:#fff;color:var(--navy)}
+
+/* Partners -> navy */
+.partners{background:var(--navy)}
+.partners__header h2{color:#fff}
+.partners__header p{color:rgba(255,255,255,.85)}
+.partners .btn--outline{border-color:#fff;color:#fff}
+.partners .btn--outline:hover{background:#fff;border-color:#fff;color:var(--navy)}
+
+/* Newsletter -> gold (flows into the existing gold footer wave) */
+.newsletter{background:var(--gold)}
+.newsletter::before{background:linear-gradient(135deg,rgba(45,61,123,.18) 0%,transparent 60%)}
+.newsletter__inner>p{color:#fff}
+.newsletter__privacy{color:rgba(255,255,255,.92)}
+.newsletter__form button{background:var(--navy);color:#fff}
+.newsletter__form button:hover{background:var(--navy-deep);color:#fff}
 </style>
 </head>
 <body>
